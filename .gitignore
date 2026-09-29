@@ -1,0 +1,66 @@
+
+# ============================================================
+#  Keil uVision / C51 项目 .gitignore
+#  原则：只跟踪“人写的源文件”，不跟踪“机器生成的东西”
+# ============================================================
+
+# ---------- Keil 编译中间产物 ----------
+Objects/
+Listings/
+*.obj
+*.lst
+*.m51
+*.lnp
+*.build_log.htm
+*.plg
+*.map
+*.o
+*.d
+*.crf
+*.dep
+*.axf
+*.htm
+*.i
+
+# ---------- 固件输出 ----------
+# .hex / .bin 是编译产物，但属于可烧录的交付物，单独允许提交
+*.hex
+*.bin
+!*.hex
+!*.bin
+
+# ---------- Keil 用户界面 / 个人设置（含窗口布局、断点、最近文件） ----------
+*.uvgui.*
+*.uvgui
+*.uvopt
+*.uvoptx
+*.uvproj.bak
+*.uvprojx.bak
+*.uvguix.*
+
+# ---------- 通用备份 / 编辑器临时文件 ----------
+*.bak
+*.bak?
+*.tmp
+*.temp
+*~
+*.orig
+*.rej
+*.swp
+*.swo
+*.autosave
+*.log
+
+# ---------- 操作系统垃圾文件 ----------
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+._*
+
+# ---------- 编辑器 / IDE 工程目录 ----------
+.vscode/
+.idea/
+*.code-workspace
+.vs/
